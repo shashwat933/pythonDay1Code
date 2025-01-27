@@ -8,8 +8,9 @@ def addNew(emp):
     print("Enter employee city")
     city=input()
     emp.append({"employee_id":emp_id,"name":name,"salary":salary,"city":city})
-    
 
+    print("Employee Added")
+    print("")
 
 def viewEmp(emp):
     for i in emp:
@@ -118,14 +119,14 @@ def deleteEmp(emp):
     choice=(int)(input())
     if(choice==1):
         deleteById(emp)
-
     else:
         deleteByName(emp)
 
 
 emp=[]
+
+
 while(1):
-    
     print("Select the options and press enter->")
     print("1:Add a new employee to the list.")
     print("2:View all employees.")
